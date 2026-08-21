@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login-Selection </title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #ffffff;
+            width: 420px;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        .container {
+            background: #ffffff;
+            width: 420px;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container img {
+            width: 90px;
+            margin-bottom: 15px;
+        }
+
+        .container h1 {
+            font-size: 24px;
+            color: #1e3c72;
+            margin-bottom: 8px;
+        }
+
+        .container p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .login-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .login-options a {
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+        .collage-name{
+            font-size: 22px;
+            font-weight: 800;
+            text-align: center;
+            color:#2c3e50;
+            margin-bottom:8px;
+            line-height: 1.4;
+            
+        }
+        .admin {
+            background: #e74c3c;
+        }
+
+        .hod {
+            background: #2980b9;
+        }
+
+        .faculty {
+            background: #16a085;
+        }
+
+        .student {
+            background: #8e44ad;
+        }
+
+        .login-options a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            opacity: 0.95;
+        }
+        .para{
+            width: 100%;
+    height: auto;
+
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    color: #555;               
+    font-size: 34px;           
+    font-weight: bold;        
+    font-style: italic;        
+
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+        }
+
+        .footer-text {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body bgcolor="cyan">
+        <div class="container">
+            <h1 class="collage-name"><i>Welcome To IntelliCampus AI </i></h1>
+            <p><strong>Smart-Academic Intelligence System</strong></p>
+             <h3><u><i>Select Your Login Type:-  </i></u></h3> 
+         <br>
+         <p class="para"><strong><i>Welcome to Collage-Management System:</i></strong></p>
+        <br>
+        <div class="login-options">
+        <h3><a href="adminLogin.html" class="admin"><strong><i>  LOGIN AS ADMIN   </i></strong></a></h3>
+        <br>
+        <h3><a href="hodLogin.html" class="hod"><strong><i>  LOGIN AS HOD </i></strong></a></h3>
+        <br>
+        <h3><a href="facultyLogin.html" class="faculty"><strong><i>  LOGIN AS FACULTY </i></strong></a></h3>
+        <br>
+        <h3><a href="studentLogin.html" class="student"><strong><i>  LOGIN AS STUDENT   </i></strong></a></h3>
+        <br>
+        </div>
+        <div class="footer-text">
+            2026 Collage-Management System
+        </div>
+        </div>
+    </body>
+</html>

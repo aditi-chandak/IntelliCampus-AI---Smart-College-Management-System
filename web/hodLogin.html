@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hod-Login</title>
+        <style>
+        body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+ background: linear-gradient(135deg, #1e3c72, #2a5298);
+    
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container {
+    background-color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 380px;
+    text-align: center;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #2c3e50;
+}
+
+h2 {
+    margin: 8px 0 25px;
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+}
+
+
+table {
+    width: 100%;
+    border-spacing: 0 15px;   /* rows ke beech gap */
+}
+
+
+td {
+    font-size: 14px;
+    color: #333;
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41,128,185,0.5);
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background:linear-gradient(135deg,#6fb1fc,#4a90e2);
+}
+
+
+input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+ background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover {
+    background :linear-gradient(135deg,#6fb1fc,#4a90e2);
+}
+.welcome-text{
+    font-size: 26px;
+    font-weight: 800;
+    color:#0b3c5d;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    
+}
+td{
+    font-size: 18px;
+    font-weight: 600;
+    color:#083358;
+    padding: 8px;
+    
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 220px;
+    padding: 8px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #1e88e5;
+    border-radius: 6px;
+    outline: none;
+}
+input:focus {
+    border-color: #0d47a1;
+    box-shadow: 0 0 5px rgba(13, 71, 161, 0.5);
+}
+
+  </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <div class="container">
+             <h1><i><u>Hello-HOD..!!</u></i></h1>
+        <h3 class="welcome-text"><i>Welcome to the HOD's-Login Page ...!!</i></h3>
+        <br>
+        <form action="HodLoginServlet" method="post">
+            <table>
+                <tr>
+                    <td><strong><i>Username :</i></strong> </td>
+                    <td><input type="text" name="username" placeholder="Enter Username Here:"/></td>
+                </tr>
+                
+                <tr>
+                    <td><strong><i>Password :</i></strong> </td>
+                    <td><input type="password" name="password" placeholder="Enter Password Here:"/></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="Login" /></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td><input type="reset" name="Reset" /></td>
+                </tr>   
+            </table>
+        </form>
+         </div>
+    </body>
+</html>
